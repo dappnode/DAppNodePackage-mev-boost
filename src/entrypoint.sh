@@ -7,6 +7,7 @@
 RELAYS="${RELAYS:-}"
 if [ -z "$RELAYS" ]; then
   echo "RELAYS is not set"
+  sleep 2
   exit 1
 fi
 
