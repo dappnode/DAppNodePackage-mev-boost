@@ -1,16 +1,16 @@
 version: "3.5"
 services:
-  mev-boost.public.dappnode.eth:
+  mev-boost:
     build:
-      context: build
+      context: src
       args:
-        UPSTREAM_VERSION: v1.3.2
+        UPSTREAM_VERSION: v1.2.1
     volumes:
       - "data:/var/lib/mev-boost"
     environment:
-      NETWORK: ""
       RELAYS: ""
-    image: "mev-boost.public.dappnode.eth:0.2.0"
+      EXTRA_OPTS: ""
+    image: "mev-boost.mev-boost.dnp.dappnode.eth:0.1.0"
     restart: unless-stopped
 volumes:
   data: {}
