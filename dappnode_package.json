@@ -4,7 +4,7 @@
   "shortDescription": "mev-boost allows proof-of-stake Ethereum prater consensus clients to outsource block construction",
   "description": "mev-boost allows validators in Ethereum prater proof-of-stake to request blocks from a network of builders.\nThis project is part of the Flashbots research towards proposer/builder separation for Maximal Extractable Value (MEV) mitigation. mev-boost can connect to relays that aggregate multiple builders. The builders prepare full blocks, optimizing for MEV extraction and fair distribution of the rewards. The Consensus Layer client of the validator proposes the most profitable block received from mev-boost.",
   "upstreamRepo": "flashbots/mev-boost",
-  "upstreamVersion": "v1.2.1",
+  "upstreamVersion": "v1.4.0",
   "upstreamArg": "UPSTREAM_VERSION",
   "type": "service",
   "author": "Nabsku <thenabsku@gmail.com> (https://github.com/Nabsku)",
