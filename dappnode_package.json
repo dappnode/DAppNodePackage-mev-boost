@@ -12,7 +12,7 @@
   "architectures": ["linux/amd64"],
   "categories": ["Economic incentive"],
   "links": {
-    "endpoint": "http://mev-boost.mev-boost:18550",
+    "endpoint": "http://mev-boost.mev-boost.dappnode:18550",
     "homepage": "https://github.com/flashbots/mev-boost",
     "docs": "https://github.com/flashbots/mev-boost/wiki"
   },
