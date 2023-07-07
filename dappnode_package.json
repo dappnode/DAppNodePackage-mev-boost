@@ -25,6 +25,6 @@
   },
   "license": "MIT",
   "requirements": {
-    "minimumDappnodeVersion": "0.2.58"
+    "minimumDappnodeVersion": "0.2.74"
   }
 }

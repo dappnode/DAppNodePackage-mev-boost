@@ -11,6 +11,12 @@ if [ -z "$RELAYS" ]; then
   exit 1
 fi
 
+# relay to be removed
+REMOVE="https://0xa7ab7a996c8584251c8f925da3170bdfd6ebc75d50f5ddc4050a6fdc77f2a3b5fce2cc750d0865e05d7228af97d69561@agnostic-relay.net"
+
+# Remove the relay from RELAYS
+RELAYS=$(echo "$RELAYS" | sed "s,$REMOVE,,g" | sed 's/^,//' | sed 's/,$//')
+
 exec /app/mev-boost -addr 0.0.0.0:18550 \
   -mainnet \
   -relay-check \
