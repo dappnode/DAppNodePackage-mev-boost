@@ -9,3 +9,12 @@ fields:
     description: >-
       The mev-boost relay is a trusted mediator between block producers and block builders. It enables all Ethereum proof-of-stake validators to offer their blockspace to not just Flashbots but other builders as well. This opens up the market to more builders and creates competition between them, leading to more revenue and choice for validators, and better censorship-resistance for Ethereum.
     required: false
+  - id: min_bid
+    target:
+      type: environment
+      name: MIN_BID
+      service: mev-boost
+    title: Min bid
+    description: >
+      Minimum bid in ETH to accept a bid from any relay. If no bid meets the min-bid value, a locally produced block will be proposed. This feature is useful to prefer non-censoring local blocks when there are not enough MEV opportunities to justify using relays.
+    required: false
