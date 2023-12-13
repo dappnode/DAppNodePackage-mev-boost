@@ -15,4 +15,5 @@ exec /app/mev-boost -addr 0.0.0.0:18550 \
   -mainnet \
   -relay-check \
   -relays ${RELAYS} \
+  -min-bid ${MIN_BID} \
   ${EXTRA_OPTS}

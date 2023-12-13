@@ -10,6 +10,7 @@ services:
     environment:
       RELAYS: ""
       EXTRA_OPTS: ""
+      MIN_BID: "0"
     image: "mev-boost.mev-boost.dnp.dappnode.eth:0.1.0"
     restart: unless-stopped
 volumes:
